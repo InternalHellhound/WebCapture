@@ -30,7 +30,7 @@
 ## Support Me
 
 <a href="https://www.buymeacoffee.com/tawhidmonowar" target="_blank">
-  <img src="./githubpage/images/buy-me-a-coffee.gif" alt="Buy Me A Coffee" style="max-width: 100%; height: auto;">
+  <img src="./githubpage/images/buy-me-a-coffee.gif" alt="Buy Me A Coffee. You deserve more than a coffee for this awesome project" style="max-width: 100%; height: auto;">
 </a>
 
 ## To-Do
