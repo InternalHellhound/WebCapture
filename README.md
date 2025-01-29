@@ -1,6 +1,6 @@
 <p align="center">
+  <img src="https://github.com/tawhidmonowar/WebCapture/blob/main/fastlane/metadata/android/en-US/images/icon.png" height="128" alt="WebCapture">
   <h3 align="center">WebCapture</h3>
-
   <p align="center">
     WebCapture is an open source Android application that allows users to convert any web page into a PDF file. With this app, users can easily save web pages for offline reading, share web pages as PDF files, or simply keep a copy of important web pages for future reference.
     <br/>
