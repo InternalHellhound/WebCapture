@@ -14,17 +14,23 @@
 </p>
 
 <p align="center">
-<a href="https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture">
+<a href="https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture" style="text-decoration: none; display: inline-block; margin-right: 0;">
     <img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
     alt="Get it on IzzyOnDroid"
     height="80">
 </a>
-<a href="https://github.com/tawhidmonowar/WebCapture/releases">
+<a href="https://www.openapk.net/webcapture/com.tawhid.webcapture" style="text-decoration: none; display: inline-block; margin-right: 0;">
+    <img src="https://camo.githubusercontent.com/12606f923ced353fe86d4fd7c524a392e2641cd93ef5c5e6431fe5b3d9763bac/68747470733a2f2f7777772e6f70656e61706b2e6e65742f696d616765732f6f70656e61706b2d62616467652e706e67"
+    alt="Get it on OpenApk"
+    height="80">
+</a>
+<a href="https://github.com/tawhidmonowar/WebCapture/releases" style="text-decoration: none; display: inline-block;">
     <img src="https://raw.githubusercontent.com/nucleus-ffm/foss_warn/main/docs/get-it-on-github.png"
     alt="Get it on Github"
     height="80">
 </a>
 </p>
+
 
 ![Contributors](https://img.shields.io/github/contributors/tawhidmonowar/WebCapture?color=dark-green) ![Forks](https://img.shields.io/github/forks/tawhidmonowar/WebCapture?style=social) ![Stargazers](https://img.shields.io/github/stars/tawhidmonowar/WebCapture?style=social) ![Issues](https://img.shields.io/github/issues/tawhidmonowar/WebCapture) ![IzzyOnDroid version](https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/com.tawhid.webcapture) ![FreePalestine](https://raw.githubusercontent.com/tawhidmonowar/polyglot_ai/187d25e5f3acaa5af6b361d19053938cf6d3bf81/client/public/FreePalestine.svg)
 
