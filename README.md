@@ -36,7 +36,7 @@
 ![Forks](https://img.shields.io/github/forks/tawhidmonowar/WebCapture?style=social) 
 ![Stargazers](https://img.shields.io/github/stars/tawhidmonowar/WebCapture?style=social) 
 ![Issues](https://img.shields.io/github/issues/tawhidmonowar/WebCapture) 
-![IzzyOnDroid version](https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/com.tawhid.webcapture) 
+![GitHub Release](https://img.shields.io/github/v/release/tawhidmonowar/WebCapture)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/tawhidmonowar/WebCapture/total)
 ![FreePalestine](https://raw.githubusercontent.com/tawhidmonowar/polyglot_ai/187d25e5f3acaa5af6b361d19053938cf6d3bf81/client/public/FreePalestine.svg)
 
