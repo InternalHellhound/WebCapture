@@ -1,6 +1,6 @@
 <p align="center">
+  <img src="https://github.com/tawhidmonowar/WebCapture/blob/main/fastlane/metadata/android/en-US/images/icon.png" height="128" alt="WebCapture">
   <h3 align="center">WebCapture</h3>
-
   <p align="center">
     WebCapture is an open source Android application that allows users to convert any web page into a PDF file. With this app, users can easily save web pages for offline reading, share web pages as PDF files, or simply keep a copy of important web pages for future reference.
     <br/>
@@ -13,9 +13,32 @@
   </p>
 </p>
 
-<a href='https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture'><img height="80" alt='Get it on F-Droid' src='https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png'/></a>
+<p align="center">
+<a href="https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture">
+    <img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
+    alt="Get it on IzzyOnDroid"
+    height="80">
+</a>
+<a href="https://www.openapk.net/webcapture/com.tawhid.webcapture">
+    <img src="https://camo.githubusercontent.com/12606f923ced353fe86d4fd7c524a392e2641cd93ef5c5e6431fe5b3d9763bac/68747470733a2f2f7777772e6f70656e61706b2e6e65742f696d616765732f6f70656e61706b2d62616467652e706e67"
+    alt="Get it on OpenApk"
+    height="80">
+</a>
+<a href="https://github.com/tawhidmonowar/WebCapture/releases">
+    <img src="https://raw.githubusercontent.com/nucleus-ffm/foss_warn/main/docs/get-it-on-github.png"
+    alt="Get it on Github"
+    height="80">
+</a>
+</p>
 
-![Contributors](https://img.shields.io/github/contributors/tawhidmonowar/WebCapture?color=dark-green) ![Forks](https://img.shields.io/github/forks/tawhidmonowar/WebCapture?style=social) ![Stargazers](https://img.shields.io/github/stars/tawhidmonowar/WebCapture?style=social) ![Issues](https://img.shields.io/github/issues/tawhidmonowar/WebCapture) ![IzzyOnDroid version](https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/com.tawhid.webcapture) ![FreePalestine](https://raw.githubusercontent.com/tawhidmonowar/polyglot_ai/187d25e5f3acaa5af6b361d19053938cf6d3bf81/client/public/FreePalestine.svg)
+
+![Contributors](https://img.shields.io/github/contributors/tawhidmonowar/WebCapture?color=dark-green) 
+![Forks](https://img.shields.io/github/forks/tawhidmonowar/WebCapture?style=social) 
+![Stargazers](https://img.shields.io/github/stars/tawhidmonowar/WebCapture?style=social) 
+![Issues](https://img.shields.io/github/issues/tawhidmonowar/WebCapture) 
+![GitHub Release](https://img.shields.io/github/v/release/tawhidmonowar/WebCapture)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/tawhidmonowar/WebCapture/total)
+![FreePalestine](https://raw.githubusercontent.com/tawhidmonowar/polyglot_ai/187d25e5f3acaa5af6b361d19053938cf6d3bf81/client/public/FreePalestine.svg)
 
 ![screenshot](./githubpage/images/screenshot.jpg)
 
@@ -73,10 +96,3 @@ Contributions are welcome! If you find any bugs or issues, please submit them in
 ## Save Palestine
 Stand up for Palestine's existence! It is disappearing from Maps, let us raise our voices and demand a fair representation for this land and its people.
 [Don't watch this video!](https://youtu.be/O5fbyEV36pU)
-
-## Author
-* **<a href="https://tawhidmonowar.github.io/profile">Tawhid Monowar</a>** - *Computer Science & Engineering Student*
-
-
-##You deserve more than coffee for this awesome project. Keep it up.
-
