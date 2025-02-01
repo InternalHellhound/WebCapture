@@ -25,165 +25,136 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:paddingBottom="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_launcher" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/grey_90"
+            android:textSize="25sp"
+            app:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/developed_by_tawhid_monowar"
+            android:textColor="@color/grey_90"
+            app:fontFamily="sans-serif-light" />
+
+        <View
+            android:layout_width="220dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineHeight="20dp"
+            android:text="@string/about_str"
+            android:textColor="@color/grey_90"
+            android:textSize="14sp"
+            app:fontFamily="sans-serif-light" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="15dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            android:orientation="vertical"
-            android:paddingBottom="?attr/actionBarSize">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@mipmap/ic_launcher"/>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="10dp" />
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name"
-                android:textColor="@color/grey_90"
-                android:textSize="25sp"
-                app:fontFamily="sans-serif-light"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Developed by Tawhid Monowar"
-                android:textColor="@color/grey_90"
-                app:fontFamily="sans-serif-light"/>
-
-            <View
-                android:layout_width="220dp"
-                android:layout_height="3dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@color/colorPrimary" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="15dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:text="@string/last_update_txt"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:text="@string/about_str"
-                android:textColor="@color/grey_60"
-                android:justificationMode="inter_word"
-                android:textSize="14sp"
-                android:lineHeight="20dp"/>
+                android:textColor="@color/grey_90" />
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="15dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/last_update_txt"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/grey_90" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/last_update"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/grey_60"
-                    android:textSize="12sp"/>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="15dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/version_str"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/grey_90"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_version"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/grey_60"
-                    android:textSize="12sp"/>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="15dp" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/contact_str"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/grey_90" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/email"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/grey_60"
-                    android:autoLink="email" />
-
-            </LinearLayout>
-
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="15dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/github_str"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/grey_90" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/github"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/grey_90"
-                    android:ellipsize="end"
-                    android:autoLink="all"/>
-
-            </LinearLayout>
+                android:text="@string/last_update"
+                android:textColor="@color/grey_90"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-light" />
 
         </LinearLayout>
 
+        <View
+            android:layout_width="0dp"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version_str"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version"
+                android:textColor="@color/grey_90"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-light" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/github_str"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:ellipsize="end"
+                android:text="@string/github"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_90" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

@@ -8,9 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">#2F69C6</color>
-    <color name="colorPrimaryDark">#2F69C6</color>
-    <color name="colorAccent">#2F69C6</color>
+    <color name="colorPrimary">#2255ff</color>
+    <color name="colorPrimaryDark">#2255ff</color>
+    <color name="colorAccent">#2255ff</color>
 
     <color name="grey_3">#f7f7f7</color>
     <color name="grey_5">#f2f2f2</color>
@@ -21,6 +21,6 @@
     <color name="grey_80">#37474F</color>
     <color name="grey_90">#263238</color>
     <color name="grey_95">#1a1a1a</color>
-    <color name="grey_100_">#0d0d0d</color>
+    <color name="grey_100">#0d0d0d</color>
 
 </resources>

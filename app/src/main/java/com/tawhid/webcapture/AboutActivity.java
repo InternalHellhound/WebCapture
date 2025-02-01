@@ -1,9 +1,5 @@
 package com.tawhid.webcapture;
 
-import androidx.annotation.ColorInt;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -12,6 +8,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.annotation.ColorInt;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 
 import java.util.Objects;
 
@@ -23,6 +24,7 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about);
         initToolbar();
     }
+
     private void initToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -32,7 +34,7 @@ public class AboutActivity extends AppCompatActivity {
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.setStatusBarColor(this.getResources().getColor(R.color.grey_5));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.grey_5));
 
         View view = this.findViewById(android.R.id.content);
         int flags = view.getSystemUiVisibility() | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
@@ -45,7 +47,7 @@ public class AboutActivity extends AppCompatActivity {
             Drawable drawable = menu.getItem(i).getIcon();
             if (drawable == null) continue;
             drawable.mutate();
-            @ColorInt int color = getResources().getColor(R.color.grey_60);
+            @ColorInt int color = ContextCompat.getColor(this, R.color.grey_100);
             drawable.setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
         }
 
