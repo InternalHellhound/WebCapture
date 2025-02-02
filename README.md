@@ -45,7 +45,10 @@
 ## Features
 - Convert any Web Page into PDF file.
 - Save PDF files to device storage or share with other apps.
-- Open PDF inside the app (PDF Reader)
+- Open PDF from the app.
+- Download YouTube video thumbnail.
+- Copy video title and description, and tags.
+- Extract hashtags from the video.
 - Simple and easy-to-use interface.
 - Fast and reliable conversion process.
 - Open-source and free to use.
