@@ -1,7 +1,5 @@
 package com.tawhid.webcapture;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +10,6 @@ import android.print.PrintDocumentAdapter;
 import android.print.PrintJob;
 import android.print.PrintManager;
 import android.view.View;
-import android.webkit.WebResourceError;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -21,11 +17,14 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.snackbar.Snackbar;
 
 public class WebViewActivity extends AppCompatActivity {
 
     WebView printWeb, webView;
+
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,7 @@ public class WebViewActivity extends AppCompatActivity {
         ProgressBar progressBar = findViewById(R.id.progressBar);
 
         // Checking Internet Connection
-        if(InternetCheck.isConnected(this)) {
+        if (InternetCheck.isConnected(this)) {
             RelativeLayout relativeLayout = findViewById(R.id.webViewLayout);
             relativeLayout.setVisibility(View.VISIBLE);
 
@@ -61,20 +60,6 @@ public class WebViewActivity extends AppCompatActivity {
                 printWeb = webView;
                 // Hide the ProgressBar when the web page finishes loading
                 progressBar.setVisibility(View.GONE);
-            }
-
-
-
-            @Override
-            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
-                LinearLayout not_available_layout = findViewById(R.id.not_available_layout);
-                // If internet is connected but webpage not available
-                if(InternetCheck.isConnected(WebViewActivity.this)) {
-                    not_available_layout.setVisibility(View.VISIBLE);
-                } else {
-                    LinearLayout no_internet_layout = findViewById(R.id.no_internet_layout);
-                    no_internet_layout.setVisibility(View.VISIBLE);
-                }
             }
         });
 
