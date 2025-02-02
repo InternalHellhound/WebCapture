@@ -97,8 +97,6 @@ Contributions are welcome! If you find any bugs or issues, please submit them in
 Stand up for Palestine's existence! It is disappearing from Maps, let us raise our voices and demand a fair representation for this land and its people.
 [Don't watch this video!](https://youtu.be/O5fbyEV36pU)
 
-## Author
-* **<a href="https://tawhidmonowar.github.io/profile">Tawhid Monowar</a>** - *Computer Science & Engineering Student*
 
 ## Analytics
 ![Analytics](https://repobeats.axiom.co/api/embed/61cf62902fac91171f5b03bd57251a97b1d81f60.svg "Analytics image")
@@ -107,3 +105,7 @@ Stand up for Palestine's existence! It is disappearing from Maps, let us raise o
 <a href="https://github.com/tawhidmonowar/WebCapture/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=tawhidmonowar/WebCapture&max=100&columns=20" />
 </a>
+
+## Author
+**Tawhid Monowar** - *Computer Science & Engineering Student* <br>
+[LinkedIn](https://www.linkedin.com/in/tawhidmonowar) | [Portfolio](https://tawhidmonowar.github.io)  | [Email](mailto:tawhidmonowar@gmail.com)
