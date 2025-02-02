@@ -66,8 +66,8 @@
 - [x] Search Engine Buttons
 - [x] Splash Screen
 - [x] About Activity
-- [x] App Exit Confirmation Dialogue
-- [x] PDF Reader
+- [x] Download YouTube video thumbnail
+- [x] Copy video title and description, and tags
 - [ ] Theme Selection
 - [ ] Swap Refresh
 - [ ] Long Screenshots
