@@ -116,12 +116,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // bing button
+        // youTube button
         LinearLayout bingButton = findViewById(R.id.youtube);
         bingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startPrinting("https://www.bing.com");
+                Intent intent = new Intent(MainActivity.this, YouTubeCaptureActivity.class);
+                startActivity(intent);
             }
         });
 

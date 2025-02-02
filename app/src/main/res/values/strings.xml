@@ -32,4 +32,20 @@
     <string name="file_date">File Date</string>
     <string name="pdf_icon">pdf_icon</string>
     <string name="youtube">YouTube</string>
+    <string name="enter_a_video_url_to_proceed">Enter a Video URL to Proceed:</string>
+    <string name="yt_e_g_url">E.g: https://www.youtube.com/watch?…</string>
+    <string name="download_thumbnail_hd">Download Thumbnail (HD)</string>
+    <string name="reload">Reload</string>
+    <string name="title">Title:</string>
+    <string name="no_tags">No tags!</string>
+    <string name="hide">Hide</string>
+    <string name="hashtags">Hashtags:</string>
+    <string name="no_title">No title!</string>
+    <string name="no_description">No description!</string>
+    <string name="description">Description:</string>
+    <string name="no_hashtag">No hashtag!</string>
+    <string name="video_tag_s">Video Tag(s):</string>
+    <string name="copy">Copy</string>
+    <string name="expand">expand</string>
+
 </resources>
