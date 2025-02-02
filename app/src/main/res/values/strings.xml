@@ -27,4 +27,9 @@
     <string name="try_again">Try again</string>
     <string name="no_internet">No Internet Connection!</string>
     <string name="developed_by_tawhid_monowar">Developed by Tawhid Monowar</string>
+    <string name="pdf_name">PDF Name</string>
+    <string name="file_name">File Name</string>
+    <string name="file_date">File Date</string>
+    <string name="pdf_icon">pdf_icon</string>
+    <string name="youtube">YouTube</string>
 </resources>

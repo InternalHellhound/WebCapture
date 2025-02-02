@@ -26,10 +26,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -44,12 +44,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
-
     EditText input_url;
     RecyclerView recyclerView;
 
-    private static final int REQUEST_CODE_MANAGE_STORAGE = 1;
-    private static final int REQUEST_CODE_EXTERNAL_STORAGE = 2;
+    private static final int REQUEST_CODE_EXTERNAL_STORAGE = 100;
+    private ActivityResultLauncher<Intent> manageStoragePermissionLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,20 +57,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         input_url = findViewById(R.id.input_url);
-
         recyclerView = findViewById(R.id.pdfList);
-
-        // Check for MANAGE_EXTERNAL_STORAGE permission
-        if (hasManageExternalStoragePermission()) {
-            recyclerView.setAdapter(new AdapterClass(this, pdfFiles()));
-        } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                requestManageExternalStoragePermission();
-            } else {
-                requestExternalStoragePermissions();
-            }
-        }
-
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         Intent intent = getIntent();
@@ -87,6 +73,20 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        manageStoragePermissionLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                result -> {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                        if (Environment.isExternalStorageManager()) {
+                            showSnackbar("Manage External Storage permission granted");
+                            loadData();
+                        } else {
+                            showSnackbar("Permission denied. Unable to access files.");
+                        }
+                    }
+                });
+
+        checkAndRequestPermissions();
 
         // go button
         LinearLayout goButton = findViewById(R.id.go_button);
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // bing button
-        LinearLayout bingButton = findViewById(R.id.bing);
+        LinearLayout bingButton = findViewById(R.id.youtube);
         bingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -140,11 +140,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void checkAndRequestPermissions() {
+        if (hasManageExternalStoragePermission()) {
+            loadData();
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                requestManageExternalStoragePermission();
+            } else {
+                requestExternalStoragePermissions();
+            }
+        }
+    }
+
+
     private boolean hasManageExternalStoragePermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             return Environment.isExternalStorageManager();
+        } else {
+            return ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED &&
+                    ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
         }
-        return false;
     }
 
 
@@ -154,13 +169,13 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
                     intent.setData(Uri.parse("package:" + getPackageName()));
-                    startActivityForResult(intent, 1);
+                    manageStoragePermissionLauncher.launch(intent);
                 } catch (Exception e) {
                     Intent intent = new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
-                    startActivityForResult(intent, 1);
+                    manageStoragePermissionLauncher.launch(intent);
                 }
             } else {
-                Toast.makeText(this, "Permission already granted", Toast.LENGTH_SHORT).show();
+                showSnackbar("Permission already granted");
             }
         }
     }
@@ -169,7 +184,6 @@ public class MainActivity extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
                 ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
 
-            // Requesting the permissions
             ActivityCompat.requestPermissions(this,
                     new String[]{
                             Manifest.permission.READ_EXTERNAL_STORAGE,
@@ -177,36 +191,46 @@ public class MainActivity extends AppCompatActivity {
                     },
                     REQUEST_CODE_EXTERNAL_STORAGE);
         } else {
-            Toast.makeText(this, "External Storage permissions already granted", Toast.LENGTH_SHORT).show();
+            showSnackbar("External Storage permissions already granted");
+            loadData();
         }
     }
 
+    // Handle the result of permission requests (for Android < 11)
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @NonNull Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == 1) {
-            if (hasManageExternalStoragePermission()) {
-                recyclerView.setAdapter(new AdapterClass(this, pdfFiles()));
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQUEST_CODE_EXTERNAL_STORAGE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                showSnackbar("External Storage permission granted");
+                loadData();
             } else {
-                Toast.makeText(this, "Permission not granted. Unable to access files.", Toast.LENGTH_SHORT).show();
+                showSnackbar("Permission denied. Unable to access files.");
             }
         }
     }
 
-    private ArrayList<String> pdfFiles(){
-        ContentResolver contentResolver = getContentResolver();
+    private void loadData() {
+        // Load your RecyclerView adapter here
+        recyclerView.setAdapter(new AdapterClass(this, pdfFiles()));
+    }
 
+    private void showSnackbar(String message) {
+        Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT).show();
+    }
+
+    private ArrayList<String> pdfFiles() {
+        ContentResolver contentResolver = getContentResolver();
         String mime = MediaStore.Files.FileColumns.MIME_TYPE + "=?";
         String memeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension("pdf");
         String[] args = new String[]{memeType};
-        String[] proj = {MediaStore.Files.FileColumns.DATA,MediaStore.Files.FileColumns.DISPLAY_NAME};
+        String[] proj = {MediaStore.Files.FileColumns.DATA, MediaStore.Files.FileColumns.DISPLAY_NAME};
         String sortingOrder = MediaStore.Files.FileColumns.DATE_ADDED + " DESC";
         Cursor cursor = contentResolver.query(MediaStore.Files.getContentUri("external")
-                ,proj, mime,args,sortingOrder);
+                , proj, mime, args, sortingOrder);
         ArrayList<String> pdfFiles = new ArrayList<>();
-        if (cursor !=  null){
-            while (cursor.moveToNext()){
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
                 int index = cursor.getColumnIndexOrThrow(MediaStore.Files.FileColumns.DATA);
 
                 String path = cursor.getString(index);
@@ -223,8 +247,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
             intent.putExtra("input-url", url);
             startActivity(intent);
-        }
-        else{
+        } else {
             Snackbar.make(findViewById(android.R.id.content), "URl is Invalid!", Snackbar.LENGTH_SHORT).show();
         }
     }
@@ -233,12 +256,13 @@ public class MainActivity extends AppCompatActivity {
         final String URL_REGEX = "^((https?|ftp)://|(www|ftp)\\.)?[a-z0-9-]+(\\.[a-z0-9-]+)+([/?].*)?$";
         Pattern pattern = Pattern.compile(URL_REGEX);
         Matcher matcher = pattern.matcher(input);//replace with string to compare
-        if(matcher.find()) {
+        if (matcher.find()) {
             System.out.println("String contains URL");
             return true;
         }
         return false;
     }
+
     // Clear input_url
     public void clear(View view) {
         input_url.setText("");
@@ -284,10 +308,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onContextItemSelected(item);
     }
 
-    @Override
-    public void onBackPressed() {
-        showDialog();
-    }
     public void showDialog() {
         final Dialog dialog = new Dialog(MainActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -309,5 +329,4 @@ public class MainActivity extends AppCompatActivity {
 
         dialog.show();
     }
-
 }

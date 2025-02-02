@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- res/layout/item_pdf.xml -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -11,6 +10,7 @@
         android:id="@+id/pdf_icon"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:contentDescription="@string/pdf_name"
         android:src="@drawable/pdf_icon" />
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="16dp"
-        android:text="PDF Name"
-        android:textSize="16sp" />
+        android:text="@string/pdf_name"
+        android:textColor="@color/black"/>
 
 </LinearLayout>
