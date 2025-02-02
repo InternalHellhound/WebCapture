@@ -47,7 +47,7 @@
 - Save PDF files to device storage or share with other apps.
 - Open PDF from the app.
 - Download YouTube video thumbnail.
-- Copy video title and description, and tags.
+- Copy video title, description, and tags.
 - Extract hashtags from the video.
 - Simple and easy-to-use interface.
 - Fast and reliable conversion process.
@@ -67,7 +67,7 @@
 - [x] Splash Screen
 - [x] About Activity
 - [x] Download YouTube video thumbnail
-- [x] Copy video title and description, and tags
+- [x] Copy video title, description, and tags
 - [ ] Theme Selection
 - [ ] Swap Refresh
 - [ ] Long Screenshots
