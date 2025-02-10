@@ -19,7 +19,7 @@
     alt="Get it on IzzyOnDroid"
     height="80">
 </a>
-<a href="https://www.openapk.net/webcapture/com.tawhid.webcapture">
+<a href="https://www.openapk.net/webcapture/com.tawhid.webcapture/">
     <img src="https://camo.githubusercontent.com/12606f923ced353fe86d4fd7c524a392e2641cd93ef5c5e6431fe5b3d9763bac/68747470733a2f2f7777772e6f70656e61706b2e6e65742f696d616765732f6f70656e61706b2d62616467652e706e67"
     alt="Get it on OpenApk"
     height="80">
