@@ -55,9 +55,7 @@
 
 ## Support Me
 
-<a href="https://www.buymeacoffee.com/tawhidmonowar" target="_blank">
-  <img src="./githubpage/images/buy-me-a-coffee.gif" alt="Buy Me A Coffee" style="max-width: 100%; height: auto;">
-</a>
+<a href="https://www.buymeacoffee.com/tawhidmonowar"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=tawhidmonowar&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 ## To-Do
 - [x] URL Validation
