@@ -13,6 +13,7 @@
     <a href="https://github.com/tawhidmonowar/WebCapture/issues">Request Feature</a>
   </p>
 
+</div>
 
 [<img alt="Get it on IzzyOnDroid" height="80" src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png">](https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture/)
 [<img alt="Get it on OpenAPK" height="80" src="https://www.openapk.net/images/openapk-badge.png">](https://www.openapk.net/webcapture/com.tawhid.webcapture/)
@@ -28,7 +29,6 @@
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=tawhidmonowar.WebCapture)
 ![FreePalestine](https://raw.githubusercontent.com/tawhidmonowar/polyglot_ai/187d25e5f3acaa5af6b361d19053938cf6d3bf81/client/public/FreePalestine.svg)
 
-</div>
 
 ![screenshot](./githubpage/images/screenshot.jpg)
 
