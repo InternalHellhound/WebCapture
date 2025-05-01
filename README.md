@@ -1,6 +1,7 @@
-<p align="center">
-  <img src="https://github.com/tawhidmonowar/WebCapture/blob/main/fastlane/metadata/android/en-US/images/icon.png" height="128" alt="WebCapture">
-  <h3 align="center">WebCapture</h3>
+<div align="center">
+
+<p><img src="fastlane/metadata/android/en-US/images/icon.png" width="128" alt="WebCapture"></p>
+<h3 align="center">WebCapture</h3>
   <p align="center">
     WebCapture is an open source Android application that allows users to convert any web page into a PDF file. With this app, users can easily save web pages for offline reading, share web pages as PDF files, or simply keep a copy of important web pages for future reference.
     <br/>
@@ -11,26 +12,12 @@
     .
     <a href="https://github.com/tawhidmonowar/WebCapture/issues">Request Feature</a>
   </p>
-</p>
 
-<p align="center">
-<a href="https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture">
-    <img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
-    alt="Get it on IzzyOnDroid"
-    height="80">
-</a>
-<a href="https://www.openapk.net/webcapture/com.tawhid.webcapture/">
-    <img src="https://camo.githubusercontent.com/12606f923ced353fe86d4fd7c524a392e2641cd93ef5c5e6431fe5b3d9763bac/68747470733a2f2f7777772e6f70656e61706b2e6e65742f696d616765732f6f70656e61706b2d62616467652e706e67"
-    alt="Get it on OpenApk"
-    height="80">
-</a>
-<a href="https://github.com/tawhidmonowar/WebCapture/releases">
-    <img src="https://raw.githubusercontent.com/nucleus-ffm/foss_warn/main/docs/get-it-on-github.png"
-    alt="Get it on Github"
-    height="80">
-</a>
-</p>
 
+[<img alt="Get it on IzzyOnDroid" height="80" src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png">](https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture/)
+[<img alt="Get it on OpenAPK" height="80" src="https://www.openapk.net/images/openapk-badge.png">](https://www.openapk.net/webcapture/com.tawhid.webcapture/)
+[<img alt="Get it on GitHub" height="80" src="https://raw.githubusercontent.com/nucleus-ffm/foss_warn/main/docs/get-it-on-github.png">](https://github.com/tawhidmonowar/WebCapture/releases)
+[<img alt="Direct APK Download" height="80" src="https://tachibanagenerallaboratories.github.io/images/badges/Direct%20Download/direct-apk-download.png">](https://github.com/tawhidmonowar/WebCapture/releases/download/1.0.3/WebCapture.apk)
 
 ![Contributors](https://img.shields.io/github/contributors/tawhidmonowar/WebCapture?color=dark-green) 
 ![Forks](https://img.shields.io/github/forks/tawhidmonowar/WebCapture?style=social) 
@@ -40,6 +27,8 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/tawhidmonowar/WebCapture/total)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=tawhidmonowar.WebCapture)
 ![FreePalestine](https://raw.githubusercontent.com/tawhidmonowar/polyglot_ai/187d25e5f3acaa5af6b361d19053938cf6d3bf81/client/public/FreePalestine.svg)
+
+</div>
 
 ![screenshot](./githubpage/images/screenshot.jpg)
 
