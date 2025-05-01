@@ -14,10 +14,10 @@
   </p>
 
 
-[<img alt="Get it on IzzyOnDroid" height="75" src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png">](https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture/)
-[<img alt="Get it on OpenAPK" height="75" src="https://www.openapk.net/images/openapk-badge.png">](https://www.openapk.net/webcapture/com.tawhid.webcapture/)
-[<img alt="Get it on GitHub" height="75" src="https://raw.githubusercontent.com/nucleus-ffm/foss_warn/main/docs/get-it-on-github.png">](https://github.com/tawhidmonowar/WebCapture/releases)
-[<img alt="Direct APK Download" height="75" src="https://tachibanagenerallaboratories.github.io/images/badges/Direct%20Download/direct-apk-download.png">](https://github.com/tawhidmonowar/WebCapture/releases/download/1.0.3/WebCapture.apk)
+[<img alt="Get it on IzzyOnDroid" height="76" src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png">](https://apt.izzysoft.de/fdroid/index/apk/com.tawhid.webcapture/)
+[<img alt="Get it on OpenAPK" height="76" src="https://www.openapk.net/images/openapk-badge.png">](https://www.openapk.net/webcapture/com.tawhid.webcapture/)
+[<img alt="Get it on GitHub" height="76" src="https://raw.githubusercontent.com/nucleus-ffm/foss_warn/main/docs/get-it-on-github.png">](https://github.com/tawhidmonowar/WebCapture/releases)
+[<img alt="Direct APK Download" height="76" src="https://tachibanagenerallaboratories.github.io/images/badges/Direct%20Download/direct-apk-download.png">](https://github.com/tawhidmonowar/WebCapture/releases/download/1.0.3/WebCapture.apk)
 
 ![Contributors](https://img.shields.io/github/contributors/tawhidmonowar/WebCapture?color=dark-green) 
 ![Forks](https://img.shields.io/github/forks/tawhidmonowar/WebCapture?style=social) 
