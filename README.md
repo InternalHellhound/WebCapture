@@ -25,7 +25,6 @@
 ![Issues](https://img.shields.io/github/issues/tawhidmonowar/WebCapture) 
 ![GitHub Release](https://img.shields.io/github/v/release/tawhidmonowar/WebCapture)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/tawhidmonowar/WebCapture/total)
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=tawhidmonowar.WebCapture)
 ![FreePalestine](https://raw.githubusercontent.com/tawhidmonowar/polyglot_ai/187d25e5f3acaa5af6b361d19053938cf6d3bf81/client/public/FreePalestine.svg)
 
 </div>
