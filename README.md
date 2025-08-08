@@ -98,4 +98,4 @@ Stand up for Palestine's existence! It is disappearing from Maps, let us raise o
 
 ## Author
 **Tawhid Monowar** - *Computer Science & Engineering Student* <br>
-[LinkedIn](https://www.linkedin.com/in/tawhidmonowar) | [Portfolio](https://tawhidmonowar.github.io)  | [Email](mailto:tawhidmonowar@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/tawhidmonowar) | [Portfolio](https://tawhidmonowar.github.io)  | [Email](mailto:tawhidmonowar@duck.com)
